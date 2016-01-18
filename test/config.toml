@@ -1,0 +1,34 @@
+devmode = true
+
+[database]
+mysql = "hydra:Y4PdZj*6wH@tcp(database:3306)/oro_hydra"
+mongodb = "172.31.25.188:27017"
+postgres = "postgres://hydra:Y4PdZj*6wH@172.31.11.239/oro_hydra?sslmode=disable"
+
+[crawler.handler]
+avazu = "Tw8mbDHp5F"
+appnext = "C1NqN5Pj1D"
+crunchiemedia = "i36scEJwKg"
+mobvista = "BfLuZRrb"
+appcoachs = "QMYZGywb"
+ironsource = "pkdwfypp"
+motive = "jYtcMxhW"
+applift = "ZEFmEyxY"
+
+[kafka]
+brokers = ["172.31.22.222:9092", "172.31.25.188:9092", "172.31.17.130:9092"]
+
+[zookeeper]
+connect = ["172.31.22.222:2181", "172.31.21.188:2181", "172.31.17.130:2181"]
+
+[hydra.click]
+url = "http://tracking.appcoachs.net"
+
+[logstash.redis]
+host = "sh.appcoachs.com:6389"
+passwd = "N^9j430i5poiasdff72GjSW90^fsdf13adMU3sodfq10764snbh^f32fdsYiDFAjd32sasfasdfdsfasfdadfafNJs34Us*Y4FdDE5Wlnb94301GWZasadfsdfDAP35145310^T"
+key = "logstash-hydra"
+
+
+[conversion]
+consumer = "hydra.conversions.postgres.v17"

@@ -1,0 +1,9 @@
+devmode = true
+
+[database]
+#mysql = "root:qianno@192.168.99.100(database:3306)/haostudent"
+mysql = "root:qianno@(192.168.99.100:3306)/haostudent?charset=utf8"
+[haostudent.user]
+index = "template/html/user/index.html"
+login = "template/html/user/login.html"
+register = "template/html/user/register.html"

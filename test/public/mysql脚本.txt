@@ -1,0 +1,30 @@
+#创建用户表
+create table user(
+uid int,
+username varchar(20),
+password varchar(20)
+);
+#创建权限表
+create table tLimit(
+uid int,
+moduleid int
+);
+#创建功能模块表
+create table tModule(
+moduleid int,
+modulename varchar(20)
+);
+#写入一些数据用于测试
+insert into user values(1,'xiezj','123');
+insert into user values(2,'xiaohong','123');
+insert into tModule values(1,'employ manage');
+insert into tModule values(2,'material manage');
+insert into tModule values(3,'limit manage');
+insert into tModule values(4,'system log');
+insert into tModule values(5,'user manage');
+insert into tModule values(6,'finance manage'); 
+insert into tLimit values(1,1);
+insert into tLimit values(1,2);
+insert into tLimit values(2,1);
+insert into tLimit values(1,3); 
+insert into tLimit values(2,5);
